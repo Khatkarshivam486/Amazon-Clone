@@ -1,0 +1,1200 @@
+<!-- cdn(content delivery network) -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <!-- cdn link font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Project/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <i class="fa-solid fa-circle-user"></i> -->
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+          <p style="font-size: 0.75rem; color: #cccccc; padding-left: 17px">
+            Deliver to
+          </p>
+          <div
+            class="address-icon"
+            style="display: flex; font-size: 1rem; color: #ffffff"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <p>India</p>
+          </div>
+        </div>
+        <div class="nav-search border" style="flex: 1">
+          <select
+            name="category"
+            class="Filter"
+            style="
+              height: 41px;
+              width: min-content;
+              background-color: rgb(191, 187, 187);
+              text-align: center;
+            "
+          >
+            <option value="All">All</option>
+            <option value="Baby">Baby</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Gromming">Grooming</option>
+            <option value="Personal">Personal</option>
+            <option value="Personal">Personal</option>
+          </select>
+          <input
+            type="text"
+            class="Filter"
+            style="height: 41px; width: 100%; font-size: 1rem; cursor: text"
+            placeholder="Search Amazon"
+          />
+          <div
+            style="
+              height: 41px;
+              width: 5%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: rgb(208, 159, 67);
+              border-left: none;
+              font-size: 1.25rem;
+            "
+            id="search-icon"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: rgb(3, 7, 13)"
+            ></i>
+          </div>
+        </div>
+        <details class="lang-dropdown border">
+          <!-- This is what stays visible in the navbar -->
+          <summary class="lang-btn">
+            <i class="fa-solid fa-flag-usa" style="color: #fff"></i>
+            <span style="color: #fff; font-weight: bold">EN</span>
+            <i
+              class="fa-solid fa-caret-down"
+              style="font-size: 15px; color: #a7a7a7"
+            ></i>
+          </summary>
+
+          <!-- This popup menu appears ONLY when clicked -->
+          <div class="lang-menu">
+            <a href="#" class="para-decor">EN - English</a>
+            <a href="#" class="para-decor">HI - हिन्दी</a>
+            <a href="#" class="para-decor">RU - Русский</a>
+            <a href="#" class="para-decor">JA - 日本語</a>
+            <a href="#" class="para-decor">ES - Español</a>
+            <a href="#" class="para-decor">DE - Deutsch</a>
+          </div>
+        </details>
+        <details class="Account border">
+          <summary class="Account-btn">
+            <div class="Account-text">
+              <span id="line1" style="font-size: 12px">Hello, sign in</span>
+              <span id="line2" style="font-size: 14px">Accounts & Lists</span>
+            </div>
+            <i
+              class="fa-solid fa-caret-down"
+              style="font-size: 15px; color: #a7a7a7"
+            ></i>
+          </summary>
+
+          <div class="Account-menu">
+            <div class="nav-al-container">
+              <div
+                class="nav-al-signin"
+                style="
+                  height: 55px;
+                  width: 100%;
+                  margin: 0 0 10px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <span
+                  class="span-action-inner"
+                  style="
+                    height: 30px;
+                    width: 170px;
+                    background-color: rgb(230, 245, 67);
+                    color: black;
+                    padding-top: 5px;
+                    text-align: center;
+                    border-radius: 3px;
+                    display: block;
+                  "
+                >
+                  Sign in
+                </span>
+                <span
+                  style="
+                    color: black;
+                    text-align: center;
+                    font-size: 13px;
+                    margin: 7px 0 9px;
+                  "
+                  >New customer?
+                  <a class="onHover" href="#">Start here.</a></span
+                >
+                <hr
+                  style="align-self: stretch; width: 100%; border: 0.5px thick"
+                />
+              </div>
+            </div>
+            <h5
+              style="
+                padding: 0 0 7px;
+                color: black;
+                display: inline-block;
+                height: 20px;
+                width: 110px;
+              "
+            >
+              Your Lists
+            </h5>
+            <ul
+              style="
+                list-style: none;
+                font-size: 10px;
+                height: 20px;
+                width: 110px;
+                color: black;
+              "
+            >
+              <li style="padding: 0 0 5px">create a list</li>
+              <li style="padding: 0 0 5px">find a list or registry</li>
+            </ul>
+            <div
+              id="Account-details"
+              style="
+                position: absolute;
+                height: 190px;
+                right: 0;
+                top: 30%;
+                padding: 0 0 0 20px;
+                border-left: 1px solid white;
+                font-size: 10px;
+                color: black;
+                right: 0;
+                width: 130px;
+                overflow-y: auto;
+                overflow-x: hidden;
+              "
+            >
+              <h5
+                style="
+                  padding: 0 0 7px;
+                  color: black;
+                  display: inline-block;
+                  height: 20px;
+                  width: 110px;
+                  font-size: 13.28px;
+                "
+              >
+                Your Account
+              </h5>
+              <!-- the issue here is *i haven't given the ul height and width* -->
+              <ul style="list-style: none; height: 100%; width: 100%">
+                <a style="padding: 0 0 5px">Account</a>
+                <li style="padding: 0 0 5px">Orders</li>
+                <li style="padding: 0 0 5px">Recommendations</li>
+                <li style="padding: 0 0 5px">Browser History</li>
+                <li style="padding: 0 0 5px">Your watching preferences</li>
+                <li style="padding: 0 0 5px">Watchlist</li>
+                <li style="padding: 0 0 5px">Video Purchases & Rentals</li>
+                <li style="padding: 0 0 5px">Kindle +</li>
+                <li style="padding: 0 0 5px">Content & Devices</li>
+                <li style="padding: 0 0 5px">Subscribe & Save items</li>
+                <li style="padding: 0 0 5px">Content & Devices</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+        <a
+          href="#"
+          class="border"
+          style="
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: white;
+          "
+        >
+          <span style="margin: 5px 0 0; font-size: 12px; display: flex"
+            >Returns</span
+          >
+          <span style="font-size: 14px">& Orders</span>
+        </a>
+        <a
+          href="#"
+          style="
+            height: 50px;
+            width: 85px;
+            text-decoration: none;
+            padding: 0 8px 10px;
+            color: #cccccc;
+          "
+        >
+          <div
+            style="
+              height: 38px;
+              width: 38px;
+              display: flex;
+              align-items: flex-end;
+              gap: 2px;
+            "
+          >
+            <span style="display: flex; flex-direction: column">
+              <span
+                style="
+                  position: relative;
+                  height: fit-content;
+                  width: 19px;
+                  top: 15.5px;
+                  left: 4.5px;
+                  font-size: 14px;
+                  text-decoration: none;
+                  z-index: 2;
+                  color: #f08804;
+                  text-align: center;
+                "
+                >0</span
+              >
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="color: rgb(255, 255, 255); font-size: 22px"
+              ></i>
+            </span>
+            <span
+              style="
+                height: 38px;
+                width: 28px;
+                display: flex;
+                align-items: flex-end;
+                font-size: 14px;
+              "
+              >Cart</span
+            >
+          </div>
+        </a>
+      </div>
+
+      <!-- Panel2 -->
+      <div
+        class="panel"
+        style="height: 39px; background-color: #232f3e; display: flex"
+      >
+        <a
+          href="#"
+          id="All"
+          style="
+            height: 39px;
+            width: 58px;
+            padding: 8px 9px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+          "
+        >
+          <i class="fa-solid fa-bars"></i>
+          <span style="padding: 0 0 0 4px; font-weight: 700px">All</span>
+        </a>
+        <div
+          id="Prime-video"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Prime Video</a
+          >
+        </div>
+        <div
+          id="Coupons"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Coupons</a
+          >
+        </div>
+        <div
+          id="Customer Service"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Customer Service</a
+          >
+        </div>
+        <div
+          id="Deals"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Today's Deals</a
+          >
+        </div>
+        <div
+          id="Registry"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Registry</a
+          >
+        </div>
+        <div
+          id="Gift Cards"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Gift Cards</a
+          >
+        </div>
+        <div
+          id="Sell"
+          style="
+            padding: 0 5px;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <a
+            href="#"
+            style="
+              margin: 5px 0 6px;
+              padding: 8px 5px;
+              text-decoration: none;
+              font-size: 14px;
+              color: white;
+            "
+            >Sell</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="row1-shop-section" style="height: 3270px; width: 1068; display: flex; flex-direction: column;">
+        <div class="shop-section-row1" style="height: 426px; width: 100%; padding: 8px 0;">
+          <ul class="shop-row1-ul">
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/kitchen_img.avif');"><h2 class="shop-row1">Shop kitchen must-haves</h2></div></li>
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/beauty_img.avif');"><h2 class="shop-row1">Shop all things beauty</h2></div></li>
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/clothes_img.avif');"><h2 class="shop-row1">Start looking Sharp</h2></div></li>
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/toys_img.avif');"><h2 class="shop-row1">Toys for little ones</h2></div></li>
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/pc_img.avif');"><h2 class="shop-row1">Level up your PC here</h2></div></li>
+            <li><div class="row1-shop" style="background-image: url('/Project/Images/row1-shop-section/books_img.avif');"><h2 class="shop-row1">Discover books you can't put down</h2></div></li>
+          </ul>
+        </div>
+
+
+        <div class="shop-section">
+    <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- row2 -->
+     <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- row3 -->
+     <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+  
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- row4 -->
+     <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- row5 -->
+     <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- row6 -->
+     <!-- Card 1 -->
+    <div class="box">
+        <h2>Plug in with our electronics</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/headphone_img.jpg');"></div>
+                <p>Headphones</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tablet_img.jpg');"></div>
+                <p>Tablets</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Gaming_img.jpg');"></div>
+                <p>Gaming</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Speakers_img.jpg');"></div>
+                <p>Speaker</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box2 -->
+    <div class="box">
+        <h2>Score the top PCs & Accessories</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Desktops_img.jpg');"></div>
+                <p>Desktops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Laptops_img.jpg');"></div>
+                <p>Laptops</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Hard_Drives_img.jpg');"></div>
+                <p>Hard Drives</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/PC_Accessories_img.jpg');"></div>
+                <p>PC Accessories</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box3 -->
+     <div class="box">
+        <h2>Gear up to get fit</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Clothing_img.jpg');"></div>
+                <p>Clothing</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Tracker_img.jpg');"></div>
+                <p>Trackers</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Equipment_img.jpg');"></div>
+                <p>Equipment</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Deals_img.jpg');"></div>
+                <p>Deals</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+    </div>
+
+    <!-- box4 -->
+     <div class="box">
+        <h2>Apparel under $25</h2>
+        <div class="box-content-grid">
+            <!-- 2x2 items inside the card -->
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Women_img.jpg');"></div>
+                <p>Women</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Men_img.jpg');"></div>
+                <p>Men</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/Girls_img.jpg');"></div>
+                <p>Girls</p>
+            </div>
+            <div class="box-item">
+                <div class="box-img" style="background-image: url('/Project/Images/shop-section-img/boys_img.jpg');"></div>
+                <p>Boys</p>
+            </div>
+            <!-- Add other 3 items here -->
+        </div>
+        <a href="#" class="box-link">See more</a>
+      </div>
+       </div>
+
+       <!-- see more -->
+       <div class="see-more">
+        <div class="see-more-box">
+          <h2 >See personalised Recommendations</h2>
+          <span>
+            <a href="#">Sign in</a>
+          </span>
+          <p>New Customer?<a href="#"> Start here.</a></p>
+        </div>
+       </div>
+    </main>
+    <footer>
+
+      <!-- footer  -->
+      <div class="nav-footer">
+          Back to Top
+      </div>
+      
+      <!-- footer cols -->
+      <div class="footer-row2">
+        <div class="nav-footer-col" id="list-1">
+            <div class="navFooterColHead">Careers</div>
+            <ul class="footer-ul">
+              <li class="footer-col-li"><a  href="#">Blog</a></li>
+              <li class="footer-col-li"><a  href="#">About Amazon</a></li>
+              <li class="footer-col-li"><a  href="#">Investor Relations</a></li>
+              <li class="footer-col-li"><a  href="#">Become an Affiliate</a></li>
+              <li class="footer-col-li"><a  href="#">Amazon Devices</a></li>
+              <li class="footer-col-li"><a  href="#">Amazon Science</a></li>
+            </ul>
+          </div>
+
+          <!-- list2 -->
+           <div class="nav-footer-col" id="list-2">
+            <div class="navFooterColHead">Make Money with Us</div>
+            <ul class="footer-ul">
+              <li class="footer-col-li"><a  href="#">Sell Products on Amazon</a></li>
+              <li class="footer-col-li"><a  href="#">Sell on Amazon Bussiness</a></li>
+              <li class="footer-col-li"><a  href="#">Sell Apps on Amazon</a></li>
+              <li class="footer-col-li"><a  href="#">Become an Affiliate</a></li>
+              <li class="footer-col-li"><a  href="#">Advertise Your Products</a></li>
+              <li class="footer-col-li"><a  href="#">Self-Publish with Us</a></li>
+              <li class="footer-col-li"><a  href="#">Host an Amazon Hub</a></li>
+              <li class="footer-col-li">><a  href="#"> See more Make Money with Us</a></li>
+            </ul>
+          </div>
+
+          <!-- list3 -->
+           <div class="nav-footer-col" id="list-3">
+            <div class="navFooterColHead">Amazon Payment Products</div>
+            <ul class="footer-ul">
+              <li class="footer-col-li"><a  href="#">Amazon Business Card</a></li>
+              <li class="footer-col-li"><a  href="#">Shop with Points</a></li>
+              <li class="footer-col-li"><a  href="#">Reload Your Balance</a></li>
+              <li class="footer-col-li"><a  href="#">Amazon Currency Convertor</a></li>
+            </ul>
+          </div>
+
+          <!-- list4 -->
+           <div class="nav-footer-col" id="list-4">
+            <div class="navFooterColHead">Let Us Help You</div>
+            <ul class="footer-ul">
+              <li class="footer-col-li"><a  href="#">Your Account</a></li>
+              <li class="footer-col-li"><a  href="#">Your Orders</a></li>
+              <li class="footer-col-li"><a  href="#">Shipping Rates & Policies</a></li>
+              <li class="footer-col-li"><a  href="#">Returns & Replacements</a></li>
+              <li class="footer-col-li"><a  href="#">Manage Your Content & Devices</a></li>
+              <li class="footer-col-li"><a  href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-panel4">
+          <p><i class="fa-regular fa-copyright"></i>1996-2026,Amazon.com,Inc. or Its Affiliates</p>
+        </div>
+    </footer>
+  </body>
+</html>

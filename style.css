@@ -1,0 +1,447 @@
+/* focus, hover, active ( ::, :, summary::-webkitdetails-marker)
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);*/
+
+/* fit-content, auto(will give max) */
+
+/* 
+    display: flex;
+    gap: 20px; /* Optional: Adds spacing between the two boxes */
+
+    /* flex: 0 0 30%; Do not grow, do not shrink, stay strictly at 30% width */
+
+    /* flex: 1;       Automatically stretches to fill all the remaining space (70%) */
+
+*{  margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: border-box; */
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    height: 40px;
+    width: 100%;
+    background-image: url("/Project/Images/nav-logo-black.jpg");
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin: 5px 0 0;
+}
+/* NEW - uses this class for multiple elements */
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid gold;
+}
+.nav-address{
+    /* u can give padding for making the boundry longer */
+    padding: 8px 8px 10px 8px;
+}
+
+.nav-search{
+    height: 45px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.nav-search:focus-within{
+    box-shadow: 0 0 0 2px #ff9900;
+}
+
+.nav-search:hover,
+.nav-search input:focus,
+.nav-search select:focus{
+    border-color:orange;
+}
+#search-icon{
+    box-sizing: border-box;
+    /* border-left: none; */
+    outline: none;
+    border: none;
+}
+.nav-search select,
+.nav-serach #search-icon,
+.nav-search input{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /* flex:1; */
+}
+
+/*IMp
+cursor: pointer
+overflow: hidden
+outline: none
+
+/* overflow: auto hidden */
+    /* cursor: wait pointer crosshair help */
+    /* outline: thick double rgb(101, 101, 167); */
+    /* outline: 8px ridge rgb(170, 88, 88) border-radius: 2rem; */
+
+.lang{
+    height: 50px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* #lang-select{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding-right: 15px;
+    cursor: wait;
+    outline: none;
+} */
+/* #lang-select option{
+    color: #000;
+    background-color: #fff;
+} */
+/* .custom-arrow{
+    font-size: 10px;
+    color: #a7a7a7;
+    pointer-events: none; 
+    margin-left: -12px;
+} */
+
+/* .para-decor{
+    text-decoration: none;
+    color: #0f1111;
+} */
+
+/* Container */
+.lang-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hide the default browser dropdown arrow on summary */
+.lang-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+.lang-dropdown summary {
+    list-style: none; /* Hides marker in Firefox */
+}
+
+/* Navbar button layout */
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* top/bottom && Left/right */
+    padding: 6px 8px;
+}
+
+/* The popup box that appears on click */
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    color: #0f1111;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 140px;
+    z-index: 1000;
+}
+
+/* Style the links inside the popup menu */
+.lang-menu a {
+    color: #0f1111;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.lang-menu a:hover {
+    color: #e47911; /* Amazon orange highlight on hover */
+    text-decoration: underline;
+}
+
+/* Account Container */
+.Account{
+    position: relative;
+    cursor: pointer;
+}
+.Account summary::-webkit-details-marker{
+    display: none;
+}
+.Account summary{
+    list-style-type: none;
+}
+.Account .Account-text{
+    display: flex;
+    flex-direction: column;
+}
+.Account .Account-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.Account .Account-menu{
+    position: absolute;
+    top: 100%;
+    /* left: 5%; */
+    right: -20px;
+    height: 270px;
+    width: 250px;
+    background-color:rgb(181, 173, 173);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgb(75, 66, 66);
+    padding: 14px 14px 7px;
+    z-index: 9999;
+}
+
+/* Special */
+/* .onHover{
+    text-decoration:underline; 
+    color:rgb(19, 71, 167); 
+} */
+.onHover:hover{
+    color: #e47911; /* Amazon orange highlight on hover */
+    text-decoration: underline;
+}
+
+/* #row1-box1 */
+
+.row1-shop{
+    height: 100%;
+    width: 305px;
+    background-color: #f08804;
+    border-radius: 8px;
+    background-size:cover;
+    background-position: center;
+    font-weight: bolder;
+}
+
+/* this ul.shop-row1-ul -- this means (target that ul with class that) not all */
+/* ul.                */
+
+.shop-section-row1 ul{
+    display: flex;
+    padding: 0 16px;
+    gap:5px; 
+    height: 410px;
+    width: 100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-scrollbar{display: none;};
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    list-style-type: none;
+}
+
+h2.shop-row1{
+    padding: 8px 14px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.shop-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+    gap: 30px 10px;
+     /* Space between the cards */
+    padding: 20px;
+    background-color: #eaeded; /* Amazon light-grey background */
+}
+
+/* Individual Card Box */
+.box {
+    height: 420px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 20px 10px;
+    color: #0F1111;
+}
+
+/* Inner 2x2 item grid */
+.box-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+    height: 300px;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.box-img {
+    height: 120px;
+    border-radius: 7px;
+    background-size: cover;
+    /* background-position: center; */
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.box-link {
+    display: block;
+    margin: 15px 20px 0;
+    color: #007185;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.box-link:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* see more  */
+.see-more{
+    flex: 1;
+    padding: 0 20px 0;
+    /* border: 2px 0 solid black; -> wrong shorthand */
+    /* right way -> */
+    border: solid black;
+    background-color: #eaeded;
+    border-width: 0.1px 0;
+    display: flex;
+    justify-content: center;
+}
+.see-more-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.see-more h2{
+    text-align: center;
+    padding: 0 0 4px;
+}
+.see-more span{
+    width: 200px;
+    padding: 5px 11px;
+    text-align: center;
+    background-color: rgb(251, 251, 58);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+}
+.see-more span a{
+    text-decoration: none;
+    color: black;
+}
+.see-more p{
+    font-size: 11px;
+    padding: 10px;
+}
+.see-more p a:hover{
+    color:orange;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer{
+    height: 500px;
+    background-color: #232f3e;
+    color: white;
+    margin: 30px 0 0;
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+}
+.nav-footer{
+    height: 49px;
+    width: 100%;
+    text-align: center;
+    background-color: #37475a;
+    padding: 15px;
+    margin: 0 0 30px;
+    font-size: 13px;
+}
+.footer-row2{
+    height: 330px;
+    width: 100%;
+    /* padding: 50px 20px; */
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 0 0 30px;
+}
+
+.nav-footer-col{
+    height: 268px;
+    width: fit-content;
+    padding: 0 10px;
+    color: white;
+}
+
+.nav-footer-col li a{
+    text-decoration: none;
+    color: #DDDDDD;
+}
+.nav-footer-col li a:hover{
+    text-decoration: underline;
+    cursor: text;
+}
+
+.nav-footer-col .navFooterColHead{
+    margin: 6px 0 14px;
+    font-weight: 700;
+}
+
+.nav-footer-col li{
+    text-decoration: none;
+    font-size: 14px;
+    margin:0 0 10px;
+    list-style: none;
+}
+
+.foot-panel4{
+    height: max-content;
+    width: 100%;
+    color: #DDDDDD;
+    text-align: center;
+}
+
+/* .navFooterColHead{
+    padding
+} */
+/* li.footer-col-li{
+    padding: 0 0 5px;
+}
+li.footer-col-li a{
+    text-decoration: none;
+    color: white;
+} *
